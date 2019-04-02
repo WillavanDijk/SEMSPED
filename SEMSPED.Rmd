@@ -69,7 +69,20 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
 
 <!--Introduction-->
+1.	SEM is a very useful tool in education because it deals with measurement and relationships between latent factors; most of educational constructs are latent factors (Schreiber et al., 2006)<!-- Can add some information on the growth of SEM field, from the original studies (e.g., H. KG Jöreskog(1978) to more and more complex models to deal with more complicated research situation and datasets. More research questions in education/special education could be investigated using this tool. --> <!--“useful” is probably a bit weak. We have seen SEM used across Transition to Classroom observations. We might want to exemplify its breath of usage. Which could then lead into its recent(?) application in special education -->
+<!-- If we keep point 3 it should go to the top as it is more broad and then we can move into education/special education. -->
+3.	The use of and research in SEM in general is on the rise (e.g., Herschberger, 2003) in PsycINFO from 150 per year in 1994 to over 300 in 2001., and is the dominant multivariate analysis technique over MANOVA, Discriminant analysis, cluster analysis, and multidimensional scaling. Within the educational field, the use of SEM has also increased [@Teo:2009aa]. @Teo:2009aa suggest this may be attributed to the increase in accessibility to resources that help conduct SEM analyses, such as websites, articles. Additionally, @Tarka:2018aa includes the advances of and the number of available SEM software as a possibility for the increase in SEM use.
+2.	Especially in Special Education? Because SEM in general needs large sample sizes to produce robust outcomes, the use of SEM in special education research seems, at first glace, problematic, due to the low incidence of several disability types. On the other hand, special education research deals with latent constructs as much as psychological and other educational research does. Additionally, the availability of data from large national databases could give researchers the needed sample sizes to run more complex models.
 
+##Short overview of SEM and the major models
+Structural Equation Modeling is a way to model complex interactions and relations between both observed variables and latent variables [@Tarka:2018aa]. Latent variables refer to theoretical constructs that cannot be observed in and of themselves, such as intelligence, motivation, engagement, etc., but can be approximated by measuring several observable behaviors that are hypothesized to be indicators of the latent construct <!-- add[SOME CITATION]-->. A second characteristic of SEMs is that it takes measurement error into account, resulting in more precise estimated of the relations under investigation <!-- SOME CITATION-->. Finally, SEMs can model direct and indirect relations in multiple layers simultaneously <!-- SOME CITATION -->, which may mirror theoretical models about complex educational (or other social) systems [@Tarka:2018aa]. <!-- that's not the word I was going for-->
+
+##Major computer software
+SEMs are computationally complex. While they may have had inherit value to researchers early on in their development, the rise of computer software designed to handle this complexity may have been the true impetus for the increase in its use [@Tarka:2018aa]. Many computer software programs capable of handling various SEMs were developed from the late seventies on, including commercial options LISREL <!-- cite Joreskog-->, EQS, MPLUS, AMOS; more recently, open source packages for R [@R-base], such as *lavaan* [@R-lavaan], *OpenMx* [@R=OpenMX], and *sem* [@R-sem].
+
+##Purpose of the Current Study
+With this study, we aim to provide an overview of trends in SEM studies published in special education journals. These trends are related to growth over time, topics addressed, and participants included.
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 #Method
 
 ##Search Procedures
@@ -94,12 +107,15 @@ Coding procedures. We used an iterative process to finalize the definitions of t
 
 ## Data analysis
 We used `r cite_r("r-references.bib")` for all our analyses.
-
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 #Results
 The search strategies located 1042 articles. After deduplication, 800 articles were included in the title and abstract screening.  A total of 494 articles were retained for full text screening.  After consideration of the inclusion criteria, 221 articles were retained as the set for final analysis.  
-
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 # Discussion
 
+##Future Directions
+The widespread use of SEMs in Special Education Journals as shown in our data leads to the question if authors use best practices for SEM that are avaialble from other research fields <!-- ADD CITATIONS-->, or if a practice guide is needed specially for SPED.
+The lack of information on software used in many of the articles in this overview lead us to believe that use of best practices is not ideal. This should be investigated, especially in light of recent developments and interest in open science and replicability of research.
 
 \newpage
 
