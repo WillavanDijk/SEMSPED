@@ -1,0 +1,116 @@
+---
+title             : "Trends in Structural Equation Modeling in Special Education Journals"
+shorttitle        : "SEM Trends in SPED"
+
+author: 
+  - name          : "Wilhelmina van Dijk"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "2-058 Norman Hall"
+    email         : "willavandijk@ufl.edu"
+  - name          : "David Peyton"
+    affiliation   : "1"
+  - name          : "Tracy Huang"
+    affiliation   : "1"
+
+affiliation:
+  - id            : "1"
+    institution   : "University of Florida"
+
+
+authornote: |
+  Add complete departmental affiliations for each author here. Each new line herein must be indented, like this line.
+
+  Enter author note here.
+
+abstract: |
+  One or two sentences providing a **basic introduction** to the field,  comprehensible to a scientist in any discipline.
+  
+  Two to three sentences of **more detailed background**, comprehensible  to scientists in related disciplines.
+  
+  One sentence clearly stating the **general problem** being addressed by  this particular study.
+  
+  One sentence summarizing the main result (with the words "**here we show**" or their equivalent).
+  
+  Two or three sentences explaining what the **main result** reveals in direct comparison to what was thought to be the case previously, or how the  main result adds to previous knowledge.
+  
+  One or two sentences to put the results into a more **general context**.
+  
+  Two or three sentences to provide a **broader perspective**, readily comprehensible to a scientist in any discipline.
+  
+  <!-- https://tinyurl.com/ybremelq -->
+  
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["References/r-references.bib", "References/SEMSPED.bib"]
+
+floatsintext      : no
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+linenumbers       : yes
+mask              : no
+draft             : no
+
+documentclass     : "apa6"
+classoption       : "man"
+output            : papaja::apa6_docx
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+```
+
+```{r analysis-preferences}
+# Seed for random number generation
+set.seed(1981)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
+```
+
+<!--Introduction-->
+
+#Method
+
+##Search Procedures
+Following the review on publication bias by @Gage:2017aa, 48 special education journals were identified as the targeted journals for the current study. We conducted electronic database searches, which included (a) the Educational Research Information Center (ERIC), and (b) PsycINFO, (c) Academic Search Premier, (d) Education Index Retrospective: 1929-1983, and (e) Psychology and Behavioral Sciences databases using EBSCOhost. To search relevant studies that employed a structural equation model or any of its extensions in their analysis in the field of special education, we specified the journal names in the search strategy in combination with key terms related to structural equation modeling (e.g., structural equation, latent class analysis, LISREL, linear growth model, measurement invariance testing). Appendix A shows the complete search strategy for the EBSCOhost server. Two expert methodologists were consulted during the development of the search strategy.
+
+**Inclusion and exclusion criteria.** We included studies that explicitly stated a latent-variable model was used to analyze data in the study. The following studies were excluded from this study: (a) studies reporting on path analyses estimated with multiple OLS regressions, and (b) studies that reported on technical aspects of latent-variable model. 
+
+##Study Selection
+The literature selection was conducted using a two-step screening procedure. During the first step, the title and abstract of the literature records were examined against the inclusion criteria.  Studies meeting inclusion criteria or not providing sufficient information on statistical analyses were retained for full text screening. The third author and two advanced doctoral students independently screened 10% of the abstracts separately with IOA ranging from 67%- 85% with an average of 76%.  IOA was calculated as the number of disagreements over the number of agreements + disagreements.  Any disagreements were resolved through consensus.  The same team then screened another 10%. IOA for this 10% ranged from 90%-95% with an average of 92.5%.  Finally, the three screeners then each filtered an additional 33% of the remaining titles and abstracts.  During the second step, the first author examined the full text of all retained studies to make the final selection of studies meeting inclusion criteria.  The third author examined a random selection of 31% of the studies.  IOA agreement in this stage was 92.16%.  As in the first stage of the selection process, disagreements were resolved through consensus. 
+
+##Coding Strategy
+**Data items.** All articles were coded for a number of characteristics, including those pertaining to publication, topic and population, data source, model and evaluation.
+Publication. With regard to publication characteristics, we noted the journal an article was published in, along with its impact factor (taken from …. ). Additionally we coded for the authors and year of publication.
+
+**_Topic and population._** We noted the purpose and topic of each study. Purpose statements were generally located in the abstract of the articles, or within the introduction of the articles. Additionally, we collected information on the target population (i.e., students or individuals receiving special education services; family members or caregivers; service providers; or other) and age range (i.e. early childhood (0-4); elementary age (5-10); middle school (11-13); secondary school (14-18); post secondary (18+); or not applicable). We coded articles for the disability type of their target population according to the IDEA categories along with the additional categories of at-risk, English Learners, Gifted, and other. Studies in which several disabilities were identified were coded as combination, whereas studies in which disabilities were not specifically mentioned were coded as not specified. The code other referred to studies in which the population did not match any of the other categories (e.g., students in general education without any mention of special education services). 
+
+**_Data source._** For every study, we noted the source of data. Data could be (a) primary (i.e., collected at least in part specifically for the study); (b) extant (i.e., collected for a previously published study or not accessible to the public in any form without consent, such as student level data from a school or district); or (c) public (i.e., data available to the general public in some form to be used in analysis, even if additional permission for accessing more restricted levels of data is necessary). For studies using public databases, we noted which data base was used.
+
+**_Model and evaluation._** For each study we identified the type of latent variable model used. These models included cross lagged panel analysis, factor mixture models, growth mixture models, latent class analysis, latent growth models, MIMIC models, path analysis, phenotypic models, SEM models, and Cholesky decomposition models. We noted if studies reported separate model outcomes by gender or race. Additionally, we indicated if data came from a longitudinal study. Finally, we noted the software used to estimate the models.
+Coding procedures. We used an iterative process to finalize the definitions of the codes. All three authors first coded 10 articles, discussed problematic codes, and adapted codes as needed. The, we coded 10% of the articles and repeated this process. Finally, all articles were double coded and disagreements were solved by consensus.
+
+
+## Data analysis
+We used `r cite_r("r-references.bib")` for all our analyses.
+
+#Results
+The search strategies located 1042 articles. After deduplication, 800 articles were included in the title and abstract screening.  A total of 494 articles were retained for full text screening.  After consideration of the inclusion criteria, 221 articles were retained as the set for final analysis.  
+
+# Discussion
+
+
+\newpage
+
+# References
+```{r create_r-references}
+r_refs(file = "r-references.bib")
+```
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<div id = "refs"></div>
+\endgroup
